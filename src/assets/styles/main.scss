@@ -1,3 +1,4 @@
+@use "./variables";
 /* barlow-regular - latin */
 @font-face {
   font-family: 'Barlow';
@@ -56,6 +57,10 @@ body{
   font-family: "Barlow", "Arial", sans-serif;
 }
 
+section{
+  background-color: var(--clr-dark-200);
+}
+
 /* VISUALLY-HIDDEN */
 
 .visually-hidden {
@@ -75,9 +80,16 @@ body{
 /* CONTAINER */
 
 .container{
-  width: 1150px;
+  max-width: 1920px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+}
+
+.mt-0{
+  margin-top: 0;
+}
+
+.mb-0{
+  margin-bottom: 0;
 }

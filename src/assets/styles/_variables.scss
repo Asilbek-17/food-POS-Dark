@@ -1,0 +1,42 @@
+$colors:(
+    danger:(
+        100:#EA7C69,
+        200:#FF7CA3,
+        300:#ea7c6942,
+    ),
+    success:(
+        100:#50D1AA,
+        200:#6BE2BE3D,
+    ),
+    dark:(
+        100:#1F1D2B,
+        200:#252836
+    ),
+    primary:(
+      100:#65B0F6,  
+    ),
+    warning:(
+        100:#FFB572,
+    ),
+    light:(
+        100:#FFFFFF,
+        200:#ABBBC2
+    )
+);
+:root{
+    @each $shade,$type in $colors{
+        @each $prop,$color in $type{
+            --clr-#{$shade}-#{$prop}:#{$color};
+        }
+    }
+}
+@each $shade,$type in $colors{
+    @each $prop,$color in $type{
+        .bg-#{$shade}-#{$prop}{
+            background-color: #{$color};
+        }
+        .text-#{$shade}-#{$prop}{
+            color: #{$color};
+        }
+    }
+}

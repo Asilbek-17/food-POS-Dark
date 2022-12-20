@@ -1,0 +1,30 @@
+.main-wrapper{
+    display: flex;
+}
+
+.settings{
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.page-title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+}
+
+.settings-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+
+@media screen and (min-width:867px){
+    .settings-wrapper{
+        grid-template-columns: minmax(275px,15%) 60%;
+        gap: 24px;
+    }
+}
+
+
