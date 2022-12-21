@@ -1,6 +1,8 @@
 import React from 'react'
 import CategoryList from '../CategoryList/CategoryList';
+import FoodList from '../FoodList/FoodList';
 import "./categories.scss";
+
 
 function Categories() {
   return (
@@ -8,6 +10,7 @@ function Categories() {
         <div className="container">
             <h3 className="categories-title mt-0 text-light-100">Products Management</h3>
             <CategoryList />
+            <FoodList />
         </div>
     </section>
   )

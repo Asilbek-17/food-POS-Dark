@@ -1,0 +1,9 @@
+.food-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px,221px));
+    gap: 1rem;
+    justify-content: center;
+    padding: 24px;
+    max-height:70vh;
+    overflow: scroll;
+}

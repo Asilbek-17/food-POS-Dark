@@ -1,0 +1,45 @@
+.food-item {
+    display: grid;
+    place-items: center;
+    padding-top: 24px;
+    border: 1px solid var(--clr-light-200);
+    border-radius: 10px;
+    overflow: hidden;
+
+    &.empty{
+        border-style: dotted;
+        border-color: var(--clr-danger-100);
+    }
+}
+
+.food-info {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.food-separator {
+    width: 5px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--clr-light-200);
+}
+
+.edit-btn {
+    place-self: stretch;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--clr-danger-100);
+    background-color: var(--clr-danger-300);
+}
+
+.add-btn{
+    border: 0;
+    padding: .5rem 2rem;
+    font-size: 20px;
+    color: var(--clr-danger-100);
+    background-color: transparent;
+}

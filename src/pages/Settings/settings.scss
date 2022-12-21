@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 24px;
+    align-items: flex-start;
 }
 
 @media screen and (min-width:867px){
