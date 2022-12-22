@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.696720a0.css",
+    "main.js": "/static/js/main.00f4bca0.js",
+    "static/media/barlow-v12-latin-600.woff": "/static/media/barlow-v12-latin-600.295e5d75e12f7ab733d2.woff",
+    "static/media/barlow-v12-latin-regular.woff": "/static/media/barlow-v12-latin-regular.bae4c7f5963304526231.woff",
+    "static/media/barlow-v12-latin-500.woff": "/static/media/barlow-v12-latin-500.4b7a415b883464b083d3.woff",
+    "static/media/barlow-v12-latin-600.woff2": "/static/media/barlow-v12-latin-600.eb2f99b8088268cd34a2.woff2",
+    "static/media/barlow-v12-latin-regular.woff2": "/static/media/barlow-v12-latin-regular.7fa387951673abf164b1.woff2",
+    "static/media/barlow-v12-latin-500.woff2": "/static/media/barlow-v12-latin-500.50adbbfa3bfe480bf424.woff2",
+    "index.html": "/index.html",
+    "main.696720a0.css.map": "/static/css/main.696720a0.css.map",
+    "main.00f4bca0.js.map": "/static/js/main.00f4bca0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.696720a0.css",
+    "static/js/main.00f4bca0.js"
+  ]
+}

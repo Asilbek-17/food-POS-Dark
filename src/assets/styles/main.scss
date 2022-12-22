@@ -1,3 +1,4 @@
+@use "./variables";
 /* barlow-regular - latin */
 @font-face {
   font-family: 'Barlow';
@@ -57,6 +58,10 @@ body{
   background-color: #252836;
 }
 
+section{
+  background-color: var(--clr-dark-200);
+}
+
 /* VISUALLY-HIDDEN */
 
 .visually-hidden {
@@ -76,6 +81,19 @@ body{
 /* CONTAINER */
 
 .container{
+
+  max-width: 1920px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mt-0{
+  margin-top: 0;
+}
+
+.mb-0{
+  margin-bottom: 0;
   width: 100%;
   max-width: 1194px;
   margin-right: auto;

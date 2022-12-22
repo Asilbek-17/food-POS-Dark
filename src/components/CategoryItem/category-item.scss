@@ -1,0 +1,22 @@
+
+.category-btn {
+    padding-bottom: clamp(7px, 4px, 13px);
+    font-family: inherit;
+    font-size: 8px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.category-item:nth-child(1) .category-btn{
+    color: var(--clr-danger-100);
+    border-bottom-color: var(--clr-danger-100);
+}
+
+@media screen and (min-width:867px) {
+    .category-btn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+    }
+}

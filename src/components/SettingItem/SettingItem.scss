@@ -1,0 +1,42 @@
+.settings-item {
+    padding: 10px;
+    cursor: pointer;
+    &.current {
+        background-color: var(--clr-danger-300);
+    }
+    transition: background-color 300ms ease-in-out;
+}
+
+.settings-item > *{
+    pointer-events: none;
+}
+.settings-title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 130%;
+}
+
+.settings-text {
+    margin-top: 0;
+    font-size: 6px;
+    line-height: 140%;
+}
+
+@media screen and (min-width:867px){
+    .settings-item{
+        padding: 24px;
+    }
+    .settings-title {
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    
+    .settings-text {
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 140%;
+    }
+}

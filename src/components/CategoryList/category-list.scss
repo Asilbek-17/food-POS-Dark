@@ -1,0 +1,6 @@
+.category-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(60px,100px));
+    gap: clamp(10px,15px,32px);
+    border-bottom: 1px solid var(--clr-danger-100);
+}
