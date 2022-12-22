@@ -9,51 +9,102 @@ import {
 	Notification,
 } from '../../assets/images/Icon/icon';
 import './menu.scss';
-
+import { NavLink } from 'react-router-dom';
+import { OrederHead } from '../orderHead/orederHead';
+import { OrderBottom } from '../orderBottom/orderBottom';
+import { OrderBody } from '../orderBody/orderBody';
 
 export function Menu() {
 	return (
-		<ul className='stie-list'>
-			<li className='site-item'>
-				<a to={"/"} className='logo-link' href="#!">
-					{<Logo />}
-				</a>
-			</li>
-			<li className='site-item'>
-				<a className='menu-link active' href='#!'>
-					<span className='icon-span'> {<Home />} </span>
-				</a>
-			</li>
-			<li className='site-item'>
-				<a className='menu-link' href='#!'>
-					<span className='icon-span'> {<Discount />} </span>
-				</a>
-			</li>
-			<li className='site-item'>
-				<a className='menu-link' href='#!'>
-					<span className='icon-span'> {<Dashboard />} </span>
-				</a>
-			</li>
-			<li className='site-item'>
-				<a className='menu-link' href='#!'>
-					<span className='icon-span'> {<Message />} </span>
-				</a>
-			</li>
-			<li className='site-item'>
-				<a className='menu-link' href='#!'>
-					<span className='icon-span'> {<Notification />} </span>
-				</a>
-			</li>
-			<li className='site-item'>
-				<a className='menu-link' href='#!'>
-					<span className='icon-span'> {<Setting />} </span>
-				</a>
-			</li>
-			<li className='site-item'>
-				<a className='menu-link' href='#!'>
-					<span className='icon-span'> {<LogOut />} </span>
-				</a>
-			</li>
-		</ul>
+		<>
+			<ul className='stie-list'>
+				<li className='site-item'>
+					<a href='#!' className='menu-logo'>
+						{<Logo />}
+					</a>
+				</li>
+				<li className='site-item'>
+					<NavLink
+						to={'/'}
+						className={({ isActive }) =>
+							isActive ? 'menu-link active' : 'menu-link'
+						}
+					>
+						<span className='icon-span'> {<Home />} </span>
+					</NavLink>
+				</li>
+				<li className='site-item'>
+					<NavLink
+						to={'/Discount'}
+						className={({ isActive }) =>
+							isActive ? 'menu-link active' : 'menu-link'
+						}
+						href='#!'
+					>
+						<span className='icon-span'> {<Discount />} </span>
+					</NavLink>
+				</li>
+				<li className='site-item'>
+					<NavLink
+						to={'/dashboard'}
+						className={({ isActive }) =>
+							isActive ? 'menu-link active' : 'menu-link'
+						}
+					>
+						<span className='icon-span'> {<Dashboard />} </span>
+					</NavLink>
+				</li>
+				<li className='site-item'>
+					<NavLink
+						to={'/Message'}
+						className={({ isActive }) =>
+							isActive ? 'menu-link active' : 'menu-link'
+						}
+						href='#!'
+					>
+						<span className='icon-span'> {<Message />} </span>
+					</NavLink>
+				</li>
+				<li className='site-item'>
+					<NavLink
+						to={'/Notification'}
+						className={({ isActive }) =>
+							isActive ? 'menu-link active' : 'menu-link'
+						}
+						href='#!'
+					>
+						<span className='icon-span'> {<Notification />} </span>
+					</NavLink>
+				</li>
+				<li className='site-item'>
+					<NavLink
+						to={'/setting'}
+						className={({ isActive }) =>
+							isActive ? 'menu-link active' : 'menu-link'
+						}
+					>
+						<span className='icon-span'> {<Setting />} </span>
+					</NavLink>
+				</li>
+				<li className='site-item'>
+					<NavLink
+						to={'/LogOut'}
+						className={({ isActive }) =>
+							isActive ? 'menu-link active' : 'menu-link'
+						}
+						href='#!'
+					>
+						<span className='icon-span'> {<LogOut />} </span>
+					</NavLink>
+				</li>
+			</ul>
+			<div className='main-order'>
+				<OrederHead />
+				<ul className='oreder-list'>
+						<OrderBody />
+				</ul>
+				<OrderBottom />
+			</div>
+		</>
 	);
 }
