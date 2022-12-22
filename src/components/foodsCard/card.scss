@@ -1,4 +1,4 @@
-.food-item {
+.mainFood-item {
     position: relative;
     width: 192px;
     height: 226px;
@@ -10,7 +10,7 @@
     border-radius: 16px;
 }
 
-.food-img {
+.mainFood-img {
     position: absolute;
     z-index: 1;
     top: -36px;
@@ -30,7 +30,7 @@
     }
 }
 
-.food-title {
+.mainFood-title {
     font-weight: 500;
     font-size: 14px;
     line-height: 130%;
@@ -41,7 +41,7 @@
     margin-bottom: 8px;
 }
 
-.food-text {
+.mainFood-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -51,7 +51,7 @@
     margin-bottom: 4px;
 }
 
-.food-text2 {
+.mainFood-text2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;

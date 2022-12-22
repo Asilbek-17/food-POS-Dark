@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { MainCategory } from '../../components/categoryLinks/category';
 import { FoodTops } from '../../components/MainFoodsTop/FoodTops';
 import { MainHeader } from '../../components/mainHeader/mainHeader';
+import { MainOrder } from '../../components/MainOrder/MainOrder';
+import { Menu } from '../../components/menu/menu';
 import { Appetizer } from '../Appetizer/Appetizer';
 import { ColdDishes } from '../ColdDishes/ColdDishes';
 import { Dessert } from '../Dessert/Dessert';
@@ -19,6 +21,7 @@ export const HomePage = () => {
 					<MainHeader />
 					<MainCategory />
 					<FoodTops />
+					<MainOrder />
 				</div>
 				<Routes>
 					<Route index element={<HotDishes />} />

@@ -10,9 +10,6 @@ import {
 } from '../../assets/images/Icon/icon';
 import './menu.scss';
 import { NavLink } from 'react-router-dom';
-import { OrederHead } from '../orderHead/orederHead';
-import { OrderBottom } from '../orderBottom/orderBottom';
-import { OrderBody } from '../orderBody/orderBody';
 
 export function Menu() {
 	return (
@@ -98,13 +95,6 @@ export function Menu() {
 					</NavLink>
 				</li>
 			</ul>
-			<div className='main-order'>
-				<OrederHead />
-				<ul className='oreder-list'>
-						<OrderBody />
-				</ul>
-				<OrderBottom />
-			</div>
 		</>
 	);
 }

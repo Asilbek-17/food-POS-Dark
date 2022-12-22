@@ -12,7 +12,7 @@ function Settings() {
     <section className='main-section'>
       <div className="container">
         <div className="main-wrapper">
-          <Menu />
+          {/* <Menu /> */}
           <section className='settings'>
             <HeaderItem title='Settings' />
             <div className="settings-wrapper">

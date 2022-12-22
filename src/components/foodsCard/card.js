@@ -103,11 +103,11 @@ export const CardFoods = () => {
 	];
 	return hotDishes.map((item) => {
 		return (
-			<li className='food-item'>
-				<img className='food-img' src={item.foodImg} alt={item.foodName} />
-                <h4 className='food-title'>{item.foodName}</h4>
-                <p className='food-text'>{item.foodPrice}</p>
-                <p className='food-text2'>item.isAvailable</p>
+			<li className='mainFood-item'>
+				<img className='mainFood-img' src={item.foodImg} alt={item.foodName} />
+                <h4 className='mainFood-title'>{item.foodName}</h4>
+                <p className='mainFood-text'>{item.foodPrice}</p>
+                <p className='mainFood-text2'>item.isAvailable</p>
 			</li>
 		);
 	});

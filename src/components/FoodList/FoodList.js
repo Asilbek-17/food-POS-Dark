@@ -27,10 +27,7 @@ function FoodList() {
         {menu.map(item => <FoodItem {...item} />)}
 
       </ul>
-      <div className="food-btns bg-dark-100">
-        <button className='save-btn'>Save changes</button>
-        <button className='discard-btn'>Discard changes</button>
-      </div>
+      
     </>
   )
 }
