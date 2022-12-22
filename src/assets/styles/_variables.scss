@@ -10,19 +10,27 @@ $colors:(
     ),
     dark:(
         100:#1F1D2B,
-        200:#252836
+        200:#252836,
+        300:#393C49
     ),
     primary:(
       100:#65B0F6,  
     ),
     warning:(
         100:#FFB572,
+        200:#FFB57233
     ),
     light:(
         100:#FFFFFF,
         200:#ABBBC2,
-        300:#FAFAFA
-    )
+        300:#FAFAFA,
+        400:#E0E6E9
+    ),
+    purplish:(
+        100:#9290FE33,
+        200:#9290FE
+    ),
+
 );
 :root{
     @each $shade,$type in $colors{
@@ -43,6 +51,8 @@ $colors:(
 }
 
 button{
+    background-color: transparent;
+    border: 1px solid transparent;
     font-family: inherit;
     cursor: pointer;
 }
@@ -53,4 +63,12 @@ button{
 
 .text-center{
     text-align: center;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+.margin-bottom-0{
+    margin-bottom: 0;
 }

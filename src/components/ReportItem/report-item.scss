@@ -1,0 +1,42 @@
+.report-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}
+
+.report-item button{
+    padding: 4px 12px;
+    border-radius: 30px;
+}
+
+.report-item-user{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.report-item-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 0.7;
+    margin-right: 67px;
+}
+
+.report-item-center{
+    display: flex;
+    align-items: center;
+}
+
+.report-user {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.report-menu {
+    font-size: 14px;
+    line-height: 140%;
+}

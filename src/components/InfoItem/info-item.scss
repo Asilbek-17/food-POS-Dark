@@ -1,0 +1,15 @@
+.info-item{
+    padding: 16px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    background-color: var(--clr-dark-100);
+}
+
+.info-top{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
