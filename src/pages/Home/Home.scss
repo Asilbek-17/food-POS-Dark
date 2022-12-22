@@ -1,0 +1,14 @@
+.home-page {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #252836;
+    border-radius: 16px;
+}
+
+.relative-box {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    background: #252836;
+}

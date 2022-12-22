@@ -1,0 +1,27 @@
+.category-list {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #393C49;
+}
+
+.category-item {
+    margin-right: 32px;
+}
+
+.category-item:last-child {
+    margin-right: 0;
+}
+
+.category-link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    padding-bottom: 13px;
+}
+
+.activeCategory {
+    color: #EA7C69;
+    border-bottom: 1px solid #EA7C69;
+}

@@ -1,0 +1,33 @@
+.food-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 825px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.foodTop-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.foodTop-select {
+    width: 100px;
+    height: 48px;
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    appearance: none;
+    padding: 15px 0 15px 44px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    background-image: url("../../assets/images/arrow-ios-down.svg");
+    background-position: center left 12px;
+    background-repeat: no-repeat;
+}
