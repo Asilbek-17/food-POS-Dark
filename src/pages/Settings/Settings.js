@@ -4,6 +4,8 @@ import HeaderItem from '../../components/HeaderItem/HeaderItem';
 import { Menu } from '../../components/menu/menu';
 import SettingList from '../../components/SettingList/SettingList';
 import Categories from '../../components/Categories/Categories';
+import FoodList from '../../components/FoodList/FoodList';
+import CustomButton from '../../components/CustomButton/CustomButton';
 
 function Settings() {
   return (
@@ -15,7 +17,12 @@ function Settings() {
             <HeaderItem title='Settings' />
             <div className="settings-wrapper">
               <SettingList />
-              <Categories />
+              <div className='settings-inner'>
+                <Categories />
+                <FoodList />
+                
+              </div>
+              
             </div>
           </section>
         </div>

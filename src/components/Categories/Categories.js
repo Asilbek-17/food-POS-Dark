@@ -10,7 +10,6 @@ function Categories() {
         <div className="container">
             <h3 className="categories-title mt-0 text-light-100">Products Management</h3>
             <CategoryList />
-            <FoodList />
         </div>
     </section>
   )

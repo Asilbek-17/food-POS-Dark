@@ -15,16 +15,23 @@ function FoodList() {
   const menu = Array(12).fill(food);
 
   return (
-    <ul className="food-list">
-      <li className="food-item empty">
+    <>
+      <ul className="food-list">
+        <li className="food-item empty">
 
-        <CustomButton className="add-btn">
-          + <br />
-          Add new dish
-        </CustomButton>
-      </li>
-      {menu.map(item => <FoodItem {...item} />)}
-    </ul>
+          <CustomButton className="add-btn">
+            + <br />
+            Add new dish
+          </CustomButton>
+        </li>
+        {menu.map(item => <FoodItem {...item} />)}
+
+      </ul>
+      <div className="food-btns bg-dark-100">
+        <button className='save-btn'>Save changes</button>
+        <button className='discard-btn'>Discard changes</button>
+      </div>
+    </>
   )
 }
 
