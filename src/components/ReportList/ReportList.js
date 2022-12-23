@@ -19,8 +19,15 @@ const reportData = [
         payment: 125,
         state: "preparing",
         image:ErenJaegarImg
+    },
+    {
+        id:3,
+        userName: "Levi Ackerman",
+        userOrder: "Beef dumpling in hot and sour soup",
+        payment: 125,
+        state: "Pending",
+        image:ErenJaegarImg
     }
-    
     
 ]
 

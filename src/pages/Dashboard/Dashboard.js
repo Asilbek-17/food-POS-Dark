@@ -27,7 +27,7 @@ export const Dashboard = () => {
                   Today
                 </button>
               </div>
-              <img src={Diagram} alt="" />
+              <img className='diagram-img' src={Diagram} alt="" />
             </div>
           </div>
 

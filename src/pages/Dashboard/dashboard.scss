@@ -15,7 +15,16 @@
     margin-left: 2rem;
 }
 
+.dashboard-outer .diagram {
+    width: 479px;
+    height: 333px;
+}
+
 .dashboard .header-inner{
     padding-block: 24px;
     border-bottom: 1px solid var(--clr-dark-300);
+}
+
+.diagram-img {
+    margin-top: 16px !important;
 }
