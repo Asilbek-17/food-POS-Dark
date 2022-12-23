@@ -1,0 +1,21 @@
+.dashboard{
+    padding-block: 24px;
+    margin-left: 120px;
+}
+
+.dashboard-wrapper{
+    display: flex;
+}
+
+.dashboard-outer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-left: 2rem;
+}
+
+.dashboard .header-inner{
+    padding-block: 24px;
+    border-bottom: 1px solid var(--clr-dark-300);
+}
