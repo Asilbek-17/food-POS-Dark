@@ -7,6 +7,8 @@
     height: 100vh;
     background: #1F1D2B;
     border-radius: 16px 0 0 16px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .oreder-list {
@@ -14,5 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 180px;
+    padding-top: 204px;
+    padding-bottom: 200px;
 }
+

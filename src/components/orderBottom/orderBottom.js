@@ -1,7 +1,7 @@
 import React from 'react';
 import "./orderBottom.scss"
 
-export const OrderBottom = () => {
+export const OrderBottom = ({openModal}) => {
 	return (
 		<div className='order-bottom'>
 			<p className='orderBottom-text'>
@@ -10,7 +10,7 @@ export const OrderBottom = () => {
 			<p className='orderBottom-text'>
 				Sub total <span className='orderBottom-span'> $ 21,03</span>
 			</p>
-            <button className='orderBottom-btn'>Continue to Payment</button>
+            <button className='orderBottom-btn' onClick={openModal}>Continue to Payment</button>
 		</div>
 	);
 };

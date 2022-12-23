@@ -107,7 +107,7 @@ export const CardFoods = () => {
 				<img className='mainFood-img' src={item.foodImg} alt={item.foodName} />
                 <h4 className='mainFood-title'>{item.foodName}</h4>
                 <p className='mainFood-text'>{item.foodPrice}</p>
-                <p className='mainFood-text2'>item.isAvailable</p>
+                <p className='mainFood-text2'>{item.isAvailable}</p>
 			</li>
 		);
 	});

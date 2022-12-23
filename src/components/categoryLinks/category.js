@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export function MainCategory() {
 	return (
-		<ul className='category-list'>
+		<ul className='mainCategory-list'>
 			<li className='category-item'>
 				<NavLink
 					className={({ isActive }) =>

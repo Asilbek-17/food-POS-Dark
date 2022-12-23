@@ -1,6 +1,7 @@
 .mainOrder-top {
     position: fixed;
     top: 0;
+    z-index: 5;
     width: 428px;
     height: 180px;
     padding: 24px;
@@ -72,4 +73,5 @@
     line-height: 140%;
     color: #FFFFFF;
     margin: 0;
+    margin-right: 10px;
 }

@@ -1,0 +1,218 @@
+.main-modal {
+    position: absolute;
+    top: 0;
+    right: 115px;
+    z-index: 60;
+    width: 30%;
+    height: 100vh;
+    background-color: #1F1D2B;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.close {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.modal-head {
+    padding-top: 64px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #393C49;
+}
+
+.modalHead-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.modalHead-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ABBBC2;
+    margin: 0;
+}
+
+.modal-body {
+    padding-top: 24px;
+}
+
+.modal-btnBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.modalBody-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.modalBody-btn {
+    width: 101px;
+    height: 64px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ABBBC2;
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    margin-right: 8px;
+    padding: 12px 0 10px 0;
+}
+
+.modalBody-btn svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.modalBodyBtn-active {
+    color: #fff;
+    border-color: #fff;
+    background: #252836;
+}
+
+.label-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.modal-inp {
+    width: 357px;
+    height: 48px;
+    border: none;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+}
+
+.modal-inp::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+}
+
+.modal-label:nth-child(1) {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.modal-label:nth-child(2) {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.modalForm-box1 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #393C49;
+}
+
+.modalForm-box2 {
+    display: flex;
+    align-items: center;
+}
+
+.modalForm-inp1 {
+    width: 172px;
+    height: 48px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    margin-right: 13px;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+}
+
+.modalForm-inp {
+    width: 172px;
+    height: 48px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+}
+
+.modal-select {
+    width: 172px;
+    height: 48px;
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    padding: 14px 14px 14px 44px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #E0E6E9;
+    background-color: transparent;
+    margin-right: 13px;
+    appearance: none;
+    background-image: url("../../assets/images/arrow-ios-down.svg");
+    background-position: center left 14px;
+    background-repeat: no-repeat;
+}
+
+.modalBtn-exit {
+    width: 175px;
+    height: 48px;
+    border: 1px solid #EA7C69;
+    border-radius: 8px;
+    padding: 14px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #EA7C69;
+    background-color: transparent;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.modalBtn-confirm {
+    width: 175px;
+    height: 48px;
+    background: #EA7C69;
+    border: 1px solid #EA7C69;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.modal-bottom {
+    margin-top: 50px;
+}

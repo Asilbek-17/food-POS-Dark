@@ -1,13 +1,14 @@
 .order-item {
     width: 428px;
     display: flex;
-    align-items: center;
     padding-right: 24px;
     padding-left: 24px;
 }
 
 .order-item-top {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 310px;
@@ -33,6 +34,20 @@
     line-height: 130%;
     color: #FFFFFF;
     margin: 0;
+    padding-left: 50px;
+}
+
+.orderBody-text::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 42px;
+    background-image: url("../../assets/images/Images.jpg");
+    background-size: 45px 42px;
+    border-radius: 50%;
 }
 
 .orderBody-span {
@@ -41,4 +56,55 @@
     font-size: 12px;
     line-height: 140%;
     color: #ABBBC2;
+}
+
+.text-inp {
+    display: block;
+    width: 310px;
+    height: 48px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 14px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+}
+
+.text-inp::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+}
+
+.order-item-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 10px;
+}
+
+.order-item-bottom-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 23px;
+}
+
+.order-deleteBtn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #EA7C69;
+    border-radius: 8px;
+    padding: 10px;
 }
