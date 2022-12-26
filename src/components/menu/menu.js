@@ -72,7 +72,7 @@ export function Menu() {
 				</li>
 				<li className='site-item'>
 					<NavLink
-						to={'/setting'}
+						to={'/settings'}
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
