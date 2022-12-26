@@ -13,6 +13,9 @@ export const Modal = ({ modalIsOpen, openModal }) => {
 
 	return (
 		<div className={'main-modal ' + modalIsOpen}>
+			<div className='over'>
+
+			</div>
 			<div className='modal-head'>
 				<h5 className='modalHead-title'>Payment</h5>
 				<p className='modalHead-text'>3 payment method available</p>

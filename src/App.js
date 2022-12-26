@@ -10,7 +10,7 @@ export function App() {
 		<>
 			<Menu />
 			<Routes>
-				<Route index element={<HomePage />} />
+				<Route path='/*' element={<HomePage />} />
 				<Route path='/dashboard' element={<Dashboard />} />
 				<Route path='/setting' element={<Settings />} />
 			</Routes>
