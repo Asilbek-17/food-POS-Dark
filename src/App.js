@@ -12,7 +12,7 @@ export function App() {
 			<Routes>
 				<Route index element={<HomePage />} />
 				<Route path='/dashboard' element={<Dashboard />} />
-				<Route path='/settings' element={<Settings />} />
+				<Route path='/setting' element={<Settings />} />
 			</Routes>
 		</>
 	);
