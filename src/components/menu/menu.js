@@ -32,7 +32,7 @@ export function Menu() {
 				</li>
 				<li className='site-item'>
 					<NavLink
-						to={'/Discount'}
+						to={'/discount'}
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
@@ -52,7 +52,7 @@ export function Menu() {
 				</li>
 				<li className='site-item'>
 					<NavLink
-						to={'/Message'}
+						to={'/message'}
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
@@ -62,7 +62,7 @@ export function Menu() {
 				</li>
 				<li className='site-item'>
 					<NavLink
-						to={'/Notification'}
+						to={'/notification'}
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
@@ -82,7 +82,7 @@ export function Menu() {
 				</li>
 				<li className='site-item'>
 					<NavLink
-						to={'/LogOut'}
+						to={'/logout'}
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
