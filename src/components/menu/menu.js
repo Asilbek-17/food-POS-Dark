@@ -36,7 +36,6 @@ export function Menu() {
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
-						href='#!'
 					>
 						<span className='icon-span'> {<Discount />} </span>
 					</NavLink>
@@ -57,7 +56,6 @@ export function Menu() {
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
-						href='#!'
 					>
 						<span className='icon-span'> {<Message />} </span>
 					</NavLink>
@@ -68,7 +66,6 @@ export function Menu() {
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
-						href='#!'
 					>
 						<span className='icon-span'> {<Notification />} </span>
 					</NavLink>
@@ -89,7 +86,6 @@ export function Menu() {
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}
-						href='#!'
 					>
 						<span className='icon-span'> {<LogOut />} </span>
 					</NavLink>
