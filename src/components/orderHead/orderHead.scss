@@ -24,7 +24,18 @@
     margin-bottom: 24px;
 }
 
-.oreder-button {
+.radion-inp {
+    width: 0;
+    opacity: 0;
+}
+
+.radion-inp:checked + .order-inp-span {
+    background-color: #EA7C69;
+    border-color: #EA7C69;
+    color: #fff;
+}
+
+.order-inp-span {
     background: #1F1D2B;
     border: 1px solid #393C49;
     border-radius: 8px;
@@ -36,12 +47,6 @@
     line-height: 140%;
     color: #EA7C69;
     cursor: pointer;
-}
-
-.activeOrderBtn {
-    background-color: #EA7C69;
-    border-color: #EA7C69;
-    color: #fff;
 }
 
 .mainOrder-boxText {

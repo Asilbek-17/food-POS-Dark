@@ -63,7 +63,21 @@
     margin-bottom: 16px;
 }
 
-.modalBody-btn {
+.radion-inp2 {
+    width: 0;
+    opacity: 0;
+}
+
+.radion-inp2:checked +  .payment-span {
+    color: #fff;
+    border-color: #fff;
+    background: #252836;
+}
+
+.payment-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 101px;
     height: 64px;
     font-weight: 500;
@@ -77,15 +91,13 @@
     padding: 12px 0 10px 0;
 }
 
+.payment-span-tetx {
+    display: block;
+}
+
 .modalBody-btn svg {
     display: block;
     margin: 0 auto;
-}
-
-.modalBodyBtn-active {
-    color: #fff;
-    border-color: #fff;
-    background: #252836;
 }
 
 .label-text {

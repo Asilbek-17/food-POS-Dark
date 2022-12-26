@@ -21,11 +21,16 @@
     align-items: flex-start;
 }
 
+.settings-inner {
+    width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
 
 @media screen and (min-width:867px){
     .settings-wrapper{
-        grid-template-columns: minmax(275px,15%) 60%;
+        grid-template-columns: minmax(300px,15%) 60%;
         gap: 24px;
     }
 }

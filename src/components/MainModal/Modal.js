@@ -3,6 +3,14 @@ import { Cash, CreditCardIcon, Paypal } from '../../assets/images/Icon/icon';
 import './Modal.scss';
 
 export const Modal = ({ modalIsOpen, openModal }) => {
+	function modalFormSubmit(evt) {
+		evt.preventDefault();
+	}
+
+	function modalInputSubmit(evt) {
+		console.log(evt.target.value);
+	}
+
 	return (
 		<div className={'main-modal ' + modalIsOpen}>
 			<div className='modal-head'>
@@ -12,24 +20,33 @@ export const Modal = ({ modalIsOpen, openModal }) => {
 			<div className='modal-body'>
 				<h5 className='modalBody-title'>Payment Method</h5>
 				<div className='modal-btnBox'>
-					<button className='modalBody-btn modalBodyBtn-active'>
-						<CreditCardIcon />
-						Credit Card
-					</button>
-					<button className='modalBody-btn'>
-						<Paypal />
-						Paypal
-					</button>
-					<button className='modalBody-btn'>
-						<Cash />
-						Cash
-					</button>
+					<label className='payment-modal'>
+						<input className='radion-inp2 ' type='radio' name='paymetn-radio' />
+						<span className='payment-span'>
+							<CreditCardIcon />
+							<span className='payment-span-tetx'>Credit Card</span>
+						</span>
+					</label>
+					<label className='payment-modal'>
+						<input className='radion-inp2 ' type='radio' name='paymetn-radio' />
+						<span className='payment-span'>
+							<Paypal />
+							<span className='payment-span-tetx'>Paypal</span>
+						</span>
+					</label>
+					<label className='payment-modal'>
+						<input className='radion-inp2 ' type='radio' name='paymetn-radio' />
+						<span className='payment-span'>
+							<Cash />
+							<span className='payment-span-tetx'>Cash</span>
+						</span>
+					</label>
 				</div>
 			</div>
-			<form>
+			<form onSubmit={modalFormSubmit}>
 				<label className='modal-label'>
 					<p className='label-text'>Cardholder Name</p>
-					<input className='modal-inp' />
+					<input className='modal-inp'/>
 				</label>
 				<label className='modal-label'>
 					<p className='label-text'>Card Number</p>
@@ -59,12 +76,15 @@ export const Modal = ({ modalIsOpen, openModal }) => {
 						<input className='modalForm-inp' type='number' />
 					</label>
 				</div>
+				<div className='modal-bottom'>
+					<button className='modalBtn-exit' onClick={openModal} type='button'>
+						Cancel
+					</button>
+					<button className='modalBtn-confirm' type='submit'>
+						Confirm Payment
+					</button>
+				</div>
 			</form>
-
-			<div className='modal-bottom'>
-				<button className='modalBtn-exit' onClick={openModal}>Cancel</button>
-                <button className='modalBtn-confirm'>Confirm Payment</button>
-			</div>
 		</div>
 	);
 };
