@@ -1,19 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.696720a0.css",
-    "main.js": "/static/js/main.00f4bca0.js",
+    "main.css": "/static/css/main.aef75705.css",
+    "main.js": "/static/js/main.bbd8a69f.js",
+    "static/media/ErenJaegar.svg": "/static/media/ErenJaegar.30eeb7e3ede8a1f4edc0574a15034424.svg",
+    "static/media/diagram.svg": "/static/media/diagram.8a5125372785d6777c08eb9eccb9d757.svg",
+    "static/media/Image2.jpg": "/static/media/Image2.203af848157b3e4d2370.jpg",
+    "static/media/Image 5.jpg": "/static/media/Image 5.654d8c04f1062c8dbdb5.jpg",
+    "static/media/Image 9.jpg": "/static/media/Image 9.031d2de46e476e254d37.jpg",
+    "static/media/Image 8.jpg": "/static/media/Image 8.43bf7eaf4fe1272f4ee7.jpg",
+    "static/media/Images.jpg": "/static/media/Images.a2146a8626fc22f4c539.jpg",
+    "static/media/Image 3.jpg": "/static/media/Image 3.6bfaaae1e043165570be.jpg",
+    "static/media/Image 4.jpg": "/static/media/Image 4.632c4b9986e8efc28901.jpg",
+    "static/media/Image 7.jpg": "/static/media/Image 7.9d5995a9cceebc206170.jpg",
+    "static/media/Image 6.jpg": "/static/media/Image 6.86d49296595ba3b89c9d.jpg",
     "static/media/barlow-v12-latin-600.woff": "/static/media/barlow-v12-latin-600.295e5d75e12f7ab733d2.woff",
     "static/media/barlow-v12-latin-regular.woff": "/static/media/barlow-v12-latin-regular.bae4c7f5963304526231.woff",
     "static/media/barlow-v12-latin-500.woff": "/static/media/barlow-v12-latin-500.4b7a415b883464b083d3.woff",
     "static/media/barlow-v12-latin-600.woff2": "/static/media/barlow-v12-latin-600.eb2f99b8088268cd34a2.woff2",
     "static/media/barlow-v12-latin-regular.woff2": "/static/media/barlow-v12-latin-regular.7fa387951673abf164b1.woff2",
     "static/media/barlow-v12-latin-500.woff2": "/static/media/barlow-v12-latin-500.50adbbfa3bfe480bf424.woff2",
+    "static/media/search.svg": "/static/media/search.52b7be8c70501ca2d098.svg",
+    "static/media/arrow-ios-down.svg": "/static/media/arrow-ios-down.101941ba8c778bcdc44a.svg",
     "index.html": "/index.html",
-    "main.696720a0.css.map": "/static/css/main.696720a0.css.map",
-    "main.00f4bca0.js.map": "/static/js/main.00f4bca0.js.map"
+    "static/media/after.svg": "/static/media/after.c9eaee6fb4fdc2c3364b.svg",
+    "static/media/befoore.svg": "/static/media/befoore.ac68606521d6530056e3.svg",
+    "main.aef75705.css.map": "/static/css/main.aef75705.css.map",
+    "main.bbd8a69f.js.map": "/static/js/main.bbd8a69f.js.map"
   },
   "entrypoints": [
-    "static/css/main.696720a0.css",
-    "static/js/main.00f4bca0.js"
+    "static/css/main.aef75705.css",
+    "static/js/main.bbd8a69f.js"
   ]
 }

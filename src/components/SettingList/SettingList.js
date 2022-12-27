@@ -1,62 +1,63 @@
 import React, { useState } from 'react'
 import SettingItem from '../SettingItem/SettingItem';
 import "./SettingList.scss";
+import { useNavigate } from 'react-router-dom';
+
+console.log(crypto.randomUUID());
 
 const settingListData = [
   {
-    id:Math.random() * 10000,
+    id:crypto.randomUUID(),
     title:"Appearance",
     text:"Dark and Light mode, Font size",
-    isActive:false
+    isActive:false,
+    link:"appearance"
   },
   {
-    id:Math.random() * 10000,
+    id:crypto.randomUUID(),
     title:"Your Restaurant",
     text:"Dark and Light mode, Font size",
-    isActive:true
+    isActive:false,
+    link:"restaurant",
   },
   {
-    id:Math.random() * 10000,
+    id:crypto.randomUUID(),
     title:"Products Management",
     text:"Manage your product, pricing, etc",
-    isActive:false
+    isActive:false,
+    link:"management"
   },
   {
-    id:Math.random() * 10000,
+    id:crypto.randomUUID(),
     title:"Notifications",
     text:"Customize your notifications",
-    isActive:false
+    isActive:false,
+    link:"notifications"
   },
   {
-    id:Math.random() * 10000,
+    id:crypto.randomUUID(),
     title:"Security",
     text:"Configure Password, PIN, etc",
-    isActive:false
+    isActive:false,
+    link:"security"
   },
   {
-    id:Math.random() * 10000,
+    id:crypto.randomUUID(),
     title:"About Us",
     text:"Find out more about Posly",
-    isActive:false
+    isActive:false,
+    link:"about"
   },
 ]
 
 function SettingList() {
   const [data,setData] = useState(settingListData);
-  function handleItemClick(id){
-    const copyData = [...data];
-    const foundSettings = copyData.find(setting => setting.id === id);
-    const currentActiveSetting = copyData.find(setting => setting.isActive);
-    currentActiveSetting.isActive = false;
-    foundSettings.isActive = !foundSettings.isActive;
-    setData(copyData);
-  }
+  const navigate = useNavigate();
   return (
     <ul className="settings-list bg-dark-100">
         {data.map(setting => (
-          <SettingItem data-id={setting.id} isActive={setting.isActive} key={setting.id} title={setting.title} text={setting.text} onClick={evt => {
-            handleItemClick(Number(evt.target.dataset.id));
-          }} />
+          <SettingItem data-id={setting.id} url={setting.link} key={setting.id} title={setting.title} text={setting.text}
+          />
         ))}
     </ul>
   )
