@@ -7,10 +7,6 @@ export const Modal = ({ modalIsOpen, openModal }) => {
 		evt.preventDefault();
 	}
 
-	function modalInputSubmit(evt) {
-		console.log(evt.target.value);
-	}
-
 	return (
 		<div className={'main-modal ' + modalIsOpen}>
 			<div className='over'>
