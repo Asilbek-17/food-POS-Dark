@@ -1,12 +1,15 @@
 import React from 'react'
 import "./category-item.scss";
+import { Link, NavLink } from 'react-router-dom';
 
 function CategoryItem({ text }) {
   return (
     <li className="category-item">
-      <button className="category-btn text-light-100">
+      <NavLink to={text.toLowerCase()} className={({isActive}) => (
+        isActive ? "category-btn text-danger-100 active" : "category-btn text-light-100"
+      )}>
         {text}
-      </button>
+      </NavLink>
     </li>
   )
 }
