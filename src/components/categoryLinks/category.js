@@ -9,7 +9,7 @@ export function MainCategory() {
 					className={({ isActive }) =>
 						isActive ? 'category-link activeCategory' : 'category-link'
 					}
-					to={'/home'}
+					to={'hotdishes'}
 				>
 					Hot Dishes
 				</NavLink>
