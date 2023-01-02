@@ -4,7 +4,7 @@ import HeaderItem from '../../components/HeaderItem/HeaderItem';
 import SettingList from '../../components/SettingList/SettingList';
 import Categories from '../../components/Categories/Categories';
 import FoodList from '../../components/FoodList/FoodList';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function Settings() {
   return (
@@ -18,6 +18,7 @@ function Settings() {
               <div className='settings-inner'>
                 <Routes>
                   <Route path='management' element={<><Categories/><FoodList /></>}>
+                    <Route path="hot dishes" index element={<FoodList />} />
                     <Route path='*' element={<FoodList />} />
                   </Route>
                   <Route path='*' element={<></>} />

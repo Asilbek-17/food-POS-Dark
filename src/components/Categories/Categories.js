@@ -1,6 +1,5 @@
 import React from 'react'
 import CategoryList from '../CategoryList/CategoryList';
-import FoodList from '../FoodList/FoodList';
 import "./categories.scss";
 
 

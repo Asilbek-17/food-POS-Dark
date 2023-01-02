@@ -11,6 +11,12 @@
     }
 }
 
+.food-item img{
+    width: 150px;
+    max-width: 100%;
+    aspect-ratio: 1;
+}
+
 .food-info {
     display: grid;
     grid-auto-flow: column;
