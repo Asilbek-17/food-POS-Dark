@@ -24,7 +24,7 @@ export const HomePage = () => {
 					<MainOrder />
 				</div>
 				<Routes>
-					<Route index element={<HotDishes />} />
+					<Route path='hotdishes' element={<HotDishes />} />
 					<Route path='coldDishes' element={<ColdDishes />} />
 					<Route path='soup' element={<Soup />} />
 					<Route path='grill' element={<Grill />} />

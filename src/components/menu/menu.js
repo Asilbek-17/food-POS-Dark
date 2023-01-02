@@ -16,13 +16,13 @@ export function Menu() {
 		<>
 			<ul className='stie-list'>
 				<li className='site-item'>
-					<a href='#!' className='menu-logo'>
+					<a href='/home' className='menu-logo'>
 						{<Logo />}
 					</a>
 				</li>
 				<li className='site-item'>
 					<NavLink
-						to={'/'}
+						to={'/home'}
 						className={({ isActive }) =>
 							isActive ? 'menu-link active' : 'menu-link'
 						}

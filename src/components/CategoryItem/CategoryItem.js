@@ -14,6 +14,8 @@ function CategoryItem({ text, category_id }) {
         setMenuItems(categoryMenuItems.data);
       }} className={({isActive}) => (
         isActive ? "category-btn text-danger-100 active" : "category-btn text-light-100"
+      <NavLink to={text.toLowerCase()} className={({isActive}) => (
+        isActive ? "category-btn text-danger-100 active1" : "category-btn text-light-100"
       )}>
         {text}
       </NavLink>

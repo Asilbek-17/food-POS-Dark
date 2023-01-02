@@ -9,7 +9,7 @@ export function MainCategory() {
 					className={({ isActive }) =>
 						isActive ? 'category-link activeCategory' : 'category-link'
 					}
-					to={'/'}
+					to={'hotdishes'}
 				>
 					Hot Dishes
 				</NavLink>
@@ -39,7 +39,7 @@ export function MainCategory() {
 					className={({ isActive }) =>
 						isActive ? 'category-link activeCategory' : 'category-link'
 					}
-					to={'grill'}
+					to={'gril'}
 				>
 					Grill
 				</NavLink>
