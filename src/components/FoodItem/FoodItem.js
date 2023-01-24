@@ -5,7 +5,7 @@ import "./food.scss";
 function FoodItem({bowls, id, image, price,name, isEdit,setId, setIsEdit}) {
   return (
     <li className="food-item">
-        <img src={`http://localhost:5000/${image}`} alt="A beautiful and lovely food" className="food-img rounded" />
+        <img src={`http://localhost:5001/${image}`} alt="A beautiful and lovely food" className="food-img rounded" />
         <h3 className="food-name text-light-100 text-center mb-0" title='Spicy seasoned seafood noodles'>{name}</h3>
         <div className="food-info">
             <p className="food-price text-light-200">${price}</p> 

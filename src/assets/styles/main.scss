@@ -23,16 +23,7 @@
   url('../fonts/barlow-v12-latin-600.woff') format('woff'); 
 }
 
-::-webkit-scrollbar {
-  width: 0;
-  background-color: #1F1D2B ;
-}
 
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #1F1D2B;
-  transition: .3s;
-}
 
 a{
   display: inline-block;

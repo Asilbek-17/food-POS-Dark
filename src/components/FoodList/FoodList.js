@@ -27,18 +27,18 @@ function FoodList() {
     formData.append("category_id", Number(categoryRef.current.value));
     formData.append("food_img", foodImageRef.current.files[0]);
     if(isEdit){
-      await axios.put(`http://localhost:5000/food/${itemId}`,formData);
+      await axios.put(`http://localhost:5001/food/${itemId}`,formData);
     }else{
-      await axios.post(`http://localhost:5000/food`, formData);
+      await axios.post(`http://localhost:5001/food`, formData);
     }
-    const foods = await axios.get("http://localhost:5000/food/1");
+    const foods = await axios.get("http://localhost:5001/food/1");
     setMenuItems(foods.data);
     setDialogState(false);
     setIsEdit(false);
   }
 
   useMemo(async()=>{
-    const categoryItems = await axios.get("http://localhost:5000/category");
+    const categoryItems = await axios.get("http://localhost:5001/category");
     setCategories(categoryItems.data);
   },[]);
 

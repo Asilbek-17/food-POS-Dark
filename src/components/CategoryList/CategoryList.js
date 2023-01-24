@@ -9,7 +9,7 @@ function CategoryList() {
   const [categories, setCategories] = useState([]);
   useEffect(()=>{
     const getCategories = async ()=>{
-      const categoryItems = await axios.get("http://localhost:5000/category");
+      const categoryItems = await axios.get("http://localhost:5001/category");
       console.log(categoryItems.data);
       setCategories(categoryItems.data); 
     }

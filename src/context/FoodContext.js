@@ -7,7 +7,7 @@ export const FoodContext = createContext();
 export const FoodContextProvider = ({ children }) => {
     const [menuItems, setMenuItems] = useState([]);
     useMemo(async()=>{
-    const menuItems = await axios.get("http://localhost:5000/food/1");
+    const menuItems = await axios.get("http://localhost:5001/food/1");
     console.log(menuItems.data);
     setMenuItems(menuItems.data);
   },[]);

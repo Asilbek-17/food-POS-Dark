@@ -1,4 +1,3 @@
-import React from 'react';
 import { CardFoods } from '../../components/foodsCard/card';
 import './HotDishes.scss';
 
